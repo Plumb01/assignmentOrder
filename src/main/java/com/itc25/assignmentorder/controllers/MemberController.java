@@ -51,7 +51,7 @@ public class MemberController {
     public ResponseEntity<RestResponse<Boolean>> insert(@RequestBody MemberInsertDto newMember){
         return new ResponseEntity<>(
                 new RestResponse<>(service.insertMember(newMember)
-                        ,"Berhasil membuat entitas",
+                        ,"Berhasil membuat entitas ",
                         "201"),
                 HttpStatus.CREATED);
     }

@@ -33,7 +33,7 @@ public class MemberController {
     public ResponseEntity<RestResponse<MemberHeaderDto>> findMemberById(@PathVariable String id){
         return ResponseEntity.ok()
                 .body(new RestResponse<>(service.findMemberById(id)
-                        , "Berhasil ditemkuan"
+                        , "Berhasil ditemkuan "
                         ,"200"));
     }
 
